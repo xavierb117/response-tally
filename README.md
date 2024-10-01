@@ -28,7 +28,11 @@ Look at `Tallyer.java` to see the already provided code. Take a look over it and
 1. Compile the Java files by running `javac src/**/*.java`
 1. Run the main method of Tallyer by running `java -cp src Tallyer < responses.txt`
 
+## Submitting
+Once you have completed the below section (Modifying the Code), please open a Pull Request (PR). Please copy and paste your PR URL into Canvas to receive credit. 
+
 ## Modifying the code
+
 ### Wave 1 (Required)
 Implement `tallyTopics`. Read the Javadoc carefully to understand what the method is meant to do. Make sure to compile your code each time before running it!
 
