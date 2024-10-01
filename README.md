@@ -29,7 +29,27 @@ Look at `Tallyer.java` to see the already provided code. Take a look over it and
 1. Run the main method of Tallyer by running `java -cp src Tallyer < responses.txt`
 
 ## Modifying the code
-### Wave 1
+### Wave 1 (Required)
 Implement `tallyTopics`. Read the Javadoc carefully to understand what the method is meant to do. Make sure to compile your code each time before running it!
-### Wave 2
+
+For the above sample file, a correct output would look similar to:
+```
+{maps=2, lists=1, loops=1, arrays=2, compound=1}
+```
+The order is unimportant, and your class' data will be different. 
+
+### Wave 2 (Please attempt, but it is ok if you do not finish)
 Implement `tallyTopicsFiltered`. Read the Javadoc carefully to understand what the method is meant to do. Make sure to compile your code each time before running it!
+
+For the above sample file, a correct output would look similar to:
+```
+{maps=1, loops=1, arrays=2}
+```
+The order is unimportant, and your class' data will be different.
+
+### Extra Challenges (Entirely optional)
+Some more ways to exercise:
+1. Display the results in sorted order
+1. Refactor the code so that it is object oriented
+1. Robustly handle malformed files
+1. Come up with some other interesting way to work with the data!
