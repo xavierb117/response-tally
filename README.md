@@ -6,9 +6,15 @@ An exercise for counting responses to a survey.
 Fork and clone this repository. You can look at the instructions from our [previous exercise](https://github.com/auberonedu/github-intro) as a reminder of how to do this. MAKE SURE TO CLONE YOUR FORK, NOT THE ORIGINAL.
 
 ## Data Format
-There is a file `responses.txt` that contains the data we'll be working with. Here's a sample of it:
+There is a file `responses.txt` that contains the data we'll be working with. Here's a sample of the format. Your classes' exact data will be different.
 ```
-TODO: add sample
+studentA maps
+studentB maps
+studentA lists
+studentB arrays
+studentC loops
+studentC arrays
+studentA compound
 ```
 
 The first string on each line is a pseudonymous id of a student. The second string is a topic they want to know more about.
@@ -24,6 +30,6 @@ Look at `Tallyer.java` to see the already provided code. Take a look over it and
 
 ## Modifying the code
 ### Wave 1
-Implement `tallyTopics`. Read the Javadoc carefully to understand what the method is meant to do.
+Implement `tallyTopics`. Read the Javadoc carefully to understand what the method is meant to do. Make sure to compile your code each time before running it!
 ### Wave 2
-Implement `tallyTopicsFiltered`. Read the Javadoc carefully to understand what the method is meant to do.
+Implement `tallyTopicsFiltered`. Read the Javadoc carefully to understand what the method is meant to do. Make sure to compile your code each time before running it!

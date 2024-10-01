@@ -12,7 +12,7 @@ public class Tallyer {
     /**
      * The main method serves as the entry point for the program. It reads pairs of IDs and topics
      * from standard input, stores them in lists, and then calculates the number of occurrences
-     * of each topic.
+     * of each topic. The IDs and topics are guaranteed to not include internal whitespace.
      *
      * @param args command-line arguments (not used in this implementation)
      */
