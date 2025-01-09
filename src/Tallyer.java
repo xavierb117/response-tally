@@ -42,28 +42,26 @@ public class Tallyer {
     }
 
     /**
-     * Tally the occurrences of each topic from the provided lists of IDs and topics.
-     * This method takes two lists, one of IDs and one of topics, and returns a map
-     * where each topic is associated with the number of times it appears in the input.
+     * Tally the occurrences of each topic from the provided list of topics.
+     * This method takes a list of topics. It returns a Map where the keys are topics
+     * and the values are how many times they appear in the input.
      *
-     * @param ids a list of strings representing IDs associated with each topic
      * @param topics a list of strings representing the topics to be tallied
      * @return a map containing topics as keys and their occurrence counts as values
      */
     public static Map<String, Integer> tallyTopics(List<String> topics) {
         // WAVE 1
-        // TODO: Remove the print statements and implement this method
-        for (String topic : topics) {
-            System.out.println("The topic is: " + topic);
-        }
+        // TODO: Implement this method
 
         return null;
     }
 
     /**
-     * Tally the occurrences of each topic from the provided lists of IDs and topics.
-     * This method takes two lists, one of IDs and one of topics, and returns a map
-     * where each topic is associated with the number of times it appears in the input.
+     * Tally the occurrences of valid votes for each topic from the provided lists of IDs and topics.
+     * 
+     * The lists are of equal length and are aligned: the id at index zero cast a vote for
+     * the topic at endex 0, the id at index 1 cast a vote for the topic at index 1, etc.
+     * It returns a map where each topic is associated with the number of times it appears in the input.
      * However, any user who did not enter exactly 2 topics should not have their votes counted.
      *
      * @param ids a list of strings representing IDs associated with each topic

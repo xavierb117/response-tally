@@ -44,7 +44,7 @@ The order is unimportant.
 
 As an extra test, try downloading your class' data from Canvas and checking that your program properly handles it.
 
-### Wave 2 (Please attempt, but it is ok if you do not finish)
+### Wave 2
 Implement `tallyTopicsFiltered`. Read the Javadoc carefully to understand what the method is meant to do. Make sure to compile your code each time before running it!
 
 For the above sample file, a correct output would look similar to:
@@ -56,6 +56,5 @@ The order is unimportant.
 ### Extra Challenges (Entirely optional)
 Some more ways to exercise:
 1. Display the results in sorted order
-1. Refactor the code so that it is object oriented
 1. Robustly handle malformed files
 1. Come up with some other interesting way to work with the data!
