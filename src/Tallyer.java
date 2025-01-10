@@ -66,7 +66,7 @@ public class Tallyer {
      * Tally the occurrences of valid votes for each topic from the provided lists of IDs and topics.
      * 
      * The lists are of equal length and are aligned: the id at index zero cast a vote for
-     * the topic at endex 0, the id at index 1 cast a vote for the topic at index 1, etc.
+     * the topic at index 0, the id at index 1 cast a vote for the topic at index 1, etc.
      * It returns a map where each topic is associated with the number of times it appears in the input.
      * However, any user who did not enter exactly 2 topics should not have their votes counted.
      *
@@ -77,7 +77,48 @@ public class Tallyer {
     public static Map<String, Integer> tallyTopicsFiltered(List<String> ids, List<String> topics) {
       // WAVE 2
       // TODO: Implement this method
+      Map<String, Integer> validCount = new HashMap<>();
+      Map<String, Integer> validId = new HashMap<>();
+      List<String> toBeRemoved = new ArrayList<>();
 
-      return null;
+      for (String person : ids) {
+         if(!validId.containsKey(person)) {
+            validId.put(person, 1);
+         }
+         else {
+            int idCount = validId.get(person);
+            validId.put(person, idCount + 1);
+         }
+      }
+
+      for (String key : validId.keySet()) {
+         if (validId.get(key) != 2) {
+            toBeRemoved.add(key);
+         }
+      }
+
+      for (String remove : toBeRemoved) {
+        validId.remove(remove);
+      }
+
+      for (int i = 0; i < ids.size(); i++) {
+         if (!validId.containsKey(ids.get(i))) {
+            ids.remove(i);
+            topics.remove(i);
+            i--;
+         }
+      }
+
+      for (String topic : topics) {
+        if (!validCount.containsKey(topic)) {
+            validCount.put(topic, 1);
+        }
+        else {
+            int topicNum = validCount.get(topic);
+            validCount.put(topic, topicNum + 1);
+        }
+      }
+
+      return validCount;
   }
 }
